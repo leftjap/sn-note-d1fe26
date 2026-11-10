@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>세진·소연 필명 노트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@500;700&display=swap">
+<style>
+:root{
+  /* Layout: one calm reading column (max 760px); the two people sit side by side on wide screens and stack on phones */
+  --bg:#F2F4F3;
+  --surface:#FFFFFF;
+  --ink:#1A2128;
+  --muted:#56616B;
+  --line:#D7DDE1;
+  --accent:#1C5A79;
+  --accent-soft:#E2EDF3;
+  --earth:#8C5E12; --earth-bg:#F4E9D2;
+  --fire:#A43C26;  --fire-bg:#F6E0DA;
+  --metal:#5B6772; --metal-bg:#E8ECEF;
+  --water:#1C5A79; --water-bg:#E2EDF3;
+  --wood:#2F6B43;  --wood-bg:#E0EEE4;
+  --shift:#5B5F80; --shift-bg:#E7E8F1;
+  --f-display:"Gowun Batang","Noto Serif KR","AppleMyungjo","Batang",serif;
+  --f-body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --f-hanja:"Noto Serif KR","AppleMyungjo","Batang",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1418; --surface:#162029; --ink:#E4E9EC; --muted:#9AA6B1; --line:#283440;
+    --accent:#7DBADB; --accent-soft:#15303D;
+    --earth:#DDB264; --earth-bg:#33290F;
+    --fire:#EC8B72;  --fire-bg:#3A1F19;
+    --metal:#AFB9C3; --metal-bg:#222B33;
+    --water:#7DBADB; --water-bg:#15303D;
+    --wood:#86C99A;  --wood-bg:#17301F;
+    --shift:#B6B9D6; --shift-bg:#262839;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1418; --surface:#162029; --ink:#E4E9EC; --muted:#9AA6B1; --line:#283440;
+  --accent:#7DBADB; --accent-soft:#15303D;
+  --earth:#DDB264; --earth-bg:#33290F;
+  --fire:#EC8B72;  --fire-bg:#3A1F19;
+  --metal:#AFB9C3; --metal-bg:#222B33;
+  --water:#7DBADB; --water-bg:#15303D;
+  --wood:#86C99A;  --wood-bg:#17301F;
+  --shift:#B6B9D6; --shift-bg:#262839;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.72;word-break:keep-all;overflow-wrap:anywhere;}
+.wrap{max-width:760px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:28px 56px;}
+h1,h2,h3,h4{font-family:var(--f-display);font-weight:700;line-height:1.32;margin:0;text-wrap:balance;}
+h1{font-size:clamp(1.9rem, 6vw, 2.5rem);letter-spacing:-.01em;}
+h2{font-size:clamp(1.4rem, 4.4vw, 1.75rem);}
+h3{font-size:1.18rem;}
+h4{font-size:1.04rem;}
+p{margin:0;}
+ul,ol,dl{margin:0;}
+b,strong{font-weight:600;}
+a{color:var(--accent);}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px;}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.08em;color:var(--muted);}
+.note{font-size:.88rem;color:var(--muted);}
+header.top{display:grid;gap:10px;padding-bottom:22px;border-bottom:1px solid var(--line);}
+.lead{color:var(--muted);max-width:62ch;}
+.index{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;padding:0;list-style:none;}
+.index a{display:inline-block;font-size:.84rem;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px 11px;}
+.index a:hover{border-color:var(--accent);color:var(--accent);}
+section{display:grid;gap:18px;padding-block:34px;border-bottom:1px solid var(--line);scroll-margin-top:12px;}
+.head{display:grid;gap:6px;}
+.prose{max-width:64ch;}
+.pair,.grid2{display:grid;gap:14px;grid-template-columns:1fr;}
+@media (min-width:700px){.pair,.grid2{grid-template-columns:repeat(2, minmax(0, 1fr));}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:12px;align-content:start;min-width:0;}
+.card h3 small{display:block;font-family:var(--f-body);font-weight:400;font-size:.82rem;color:var(--muted);margin-top:2px;}
+.pillars{display:grid;grid-template-columns:repeat(4, minmax(0, 1fr));gap:6px;text-align:center;}
+.pillars div{border:1px solid var(--line);border-radius:8px;padding:8px 2px;display:grid;gap:1px;}
+.pillars .me{border-color:var(--accent);background:var(--accent-soft);}
+.pillars .pl,.pillars .hg{font-size:.74rem;color:var(--muted);}
+.pillars .hj{font-family:var(--f-hanja);font-weight:700;font-size:1.35rem;letter-spacing:.04em;line-height:1.3;}
+.el{list-style:none;padding:0;display:grid;gap:7px;}
+.el li{display:grid;grid-template-columns:2.6em minmax(0, 1fr) auto;gap:10px;align-items:center;}
+.el .en{font-weight:600;}
+.dots{display:flex;gap:5px;flex-wrap:wrap;align-items:center;min-height:14px;}
+.dots i{width:12px;height:12px;border-radius:50%;display:block;}
+.e-earth i{background:var(--earth);}
+.e-fire i{background:var(--fire);}
+.e-metal i{background:var(--metal);}
+.e-water i{background:var(--water);}
+.e-wood i{background:var(--wood);}
+.dots .zero{width:12px;height:12px;border-radius:50%;border:1.5px dashed var(--muted);}
+.el .ev{font-size:.85rem;color:var(--muted);}
+.meaning{display:grid;grid-template-columns:auto minmax(0, 1fr);gap:6px 14px;}
+.meaning dt{font-weight:600;}
+.meaning dd{margin:0;}
+.key{background:var(--accent-soft);border-radius:12px;padding:18px;display:grid;gap:12px;}
+.key h3{font-size:1.08rem;}
+.def{border:1px dashed var(--muted);border-radius:12px;padding:14px 16px;display:grid;gap:6px;background:var(--surface);}
+.def h3{font-size:1.02rem;}
+.chip{display:inline-block;font-size:.74rem;font-weight:600;line-height:1.55;padding:1px 8px;border-radius:999px;white-space:nowrap;}
+.s-good{color:var(--water);background:var(--water-bg);}
+.s-money{color:var(--earth);background:var(--earth-bg);}
+.s-shift{color:var(--shift);background:var(--shift-bg);}
+.s-hard{color:var(--fire);background:var(--fire-bg);}
+.s-plain{color:var(--metal);background:var(--metal-bg);}
+.s-now{color:var(--surface);background:var(--accent);}
+.legend{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.callouts{display:grid;gap:10px;grid-template-columns:1fr;}
+@media (min-width:700px){.callouts{grid-template-columns:repeat(3, minmax(0, 1fr));}}
+.callout{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:6px;align-content:start;}
+.callout h3{font-size:1.02rem;}
+.callout p{font-size:.92rem;}
+.dw{list-style:none;padding:0;display:grid;gap:8px;}
+.dw li{display:grid;grid-template-columns:6.4em minmax(0, 1fr);gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);}
+.dw li.now{border-color:var(--accent);background:var(--accent-soft);}
+.dw .when{display:grid;align-content:start;font-variant-numeric:tabular-nums;}
+.dw .when b{font-size:.9rem;}
+.dw .when span{font-size:.78rem;color:var(--muted);}
+.dw .what{display:grid;gap:4px;min-width:0;}
+.dw .tag{display:flex;flex-wrap:wrap;gap:6px;align-items:center;}
+.dw p{font-size:.92rem;}
+.gz{font-family:var(--f-hanja);font-weight:700;}
+.years{display:grid;gap:6px;}
+.years .row{display:grid;grid-template-columns:3.2em minmax(0, 1fr) minmax(0, 1fr);gap:10px;align-items:start;padding:9px 12px;border-radius:10px;}
+.years .row.body{background:var(--surface);border:1px solid var(--line);}
+.years .hd{font-size:.78rem;color:var(--muted);font-weight:600;padding-block:0;}
+.years .y{font-weight:700;font-variant-numeric:tabular-nums;}
+.years .cell{display:block;font-size:.88rem;min-width:0;}
+.check,.dot{list-style:none;padding:0;display:grid;gap:8px;}
+.check li,.dot li{position:relative;padding-left:1.45em;}
+.check li::before{content:"";position:absolute;left:0;top:.42em;width:.82em;height:.82em;border:1.5px solid var(--accent);border-radius:3px;}
+.dot li::before{content:"";position:absolute;left:.3em;top:.72em;width:.38em;height:.38em;border-radius:50%;background:var(--muted);}
+.todo{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:10px;}
+.todo h3{font-size:1.02rem;}
+.block{display:grid;gap:8px;}
+.lab{font-size:.8rem;font-weight:600;letter-spacing:.06em;}
+.lab-gift{color:var(--earth);}
+.lab-block{color:var(--fire);}
+.lab-do{color:var(--water);}
+.yitem{display:grid;grid-template-columns:4.4em minmax(0, 1fr);gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);}
+.yitem .y{display:grid;align-content:start;font-weight:700;font-variant-numeric:tabular-nums;}
+.yitem .y span{font-family:var(--f-hanja);font-weight:500;font-size:.8rem;color:var(--muted);}
+.ylist{display:grid;gap:8px;}
+.subhead{display:grid;gap:4px;margin-top:6px;}
+footer{padding-top:28px;display:grid;gap:8px;font-size:.84rem;color:var(--muted);}
+.eyerow{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;}
+.copy-btn{font:inherit;font-size:.8rem;font-weight:600;line-height:1.5;color:var(--accent);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px 12px;cursor:pointer;white-space:nowrap;}
+.copy-btn:hover{border-color:var(--accent);}
+.copy-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.copy-all{justify-self:start;padding:6px 16px;font-size:.88rem;}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
+.copy-only,.copy-inline{display:none;}
+.copying .copy-only{display:block;}
+.copying .copy-inline{display:inline;}
+.copying .copy-btn,.copying .index,.copying .legend,.copying .pillars,.copying .el,.copying .years .hd,.copying #copy-status{display:none;}
+
+section{gap:16px;padding-block:30px;}
+.c-water{color:var(--water);background:var(--water-bg);}
+.c-metal{color:var(--metal);background:var(--metal-bg);}
+.c-earth{color:var(--earth);background:var(--earth-bg);}
+.c-fire{color:var(--fire);background:var(--fire-bg);}
+.c-wood{color:var(--wood);background:var(--wood-bg);}
+.saju{display:grid;gap:8px;}
+.saju .row{display:grid;grid-template-columns:2.6em minmax(0, 1fr);gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;}
+.saju .who{font-weight:600;}
+.saju .els{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.84rem;}
+.saju .els span{display:inline-flex;align-items:center;gap:5px;}
+.saju .dots i,.saju .dots .zero{width:10px;height:10px;}
+.saju .dots{gap:3px;min-height:10px;}
+.rel{list-style:none;padding:0;display:grid;gap:8px;}
+.rel li{display:grid;grid-template-columns:1fr;gap:4px;align-items:start;}
+@media (min-width:560px){.rel li{grid-template-columns:7.4em minmax(0, 1fr);gap:12px;}}
+.rel .pairc{display:flex;align-items:center;gap:4px;white-space:nowrap;padding-top:1px;}
+.rel .op{color:var(--muted);font-size:.85rem;}
+.rel p{font-size:.93rem;}
+.rel b{font-weight:600;}
+.how{display:grid;gap:8px;grid-template-columns:1fr;}
+@media (min-width:700px){.how{grid-template-columns:repeat(3, minmax(0, 1fr));}}
+.how div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:4px;align-content:start;}
+.how h3{font-size:.98rem;}
+.how p{font-size:.88rem;color:var(--muted);}
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 18px;display:grid;gap:16px;}
+.hero .top{display:grid;gap:4px;justify-items:center;text-align:center;}
+.hero .name{font-family:var(--f-display);font-weight:700;font-size:clamp(2.5rem, 12vw, 3.2rem);line-height:1.1;letter-spacing:.06em;}
+.hero .hz{font-family:var(--f-hanja);font-weight:700;font-size:1.3rem;letter-spacing:.3em;color:var(--muted);padding-left:.3em;}
+.hero .rom{font-size:.82rem;color:var(--muted);letter-spacing:.06em;}
+.tiles{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:8px;}
+.tile{border:1px solid var(--line);border-radius:12px;padding:12px 4px 10px;display:grid;justify-items:center;gap:5px;text-align:center;min-width:0;background:var(--bg);}
+.tile .hj{font-family:var(--f-hanja);font-weight:700;font-size:1.9rem;line-height:1.15;}
+.tile .mn{font-size:.8rem;color:var(--muted);}
+.tile .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:3px;}
+.tile .chip{font-size:.7rem;padding:0 7px;}
+.sum{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:.88rem;}
+.sum span{display:inline-flex;align-items:center;gap:6px;}
+.sum .none{color:var(--muted);}
+.mean{font-size:.97rem;}
+.side{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:10px;}
+.side .lab{font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--muted);}
+.side .nm{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1.2;}
+.side .nm span{font-family:var(--f-hanja);font-size:1.05rem;color:var(--muted);margin-left:8px;letter-spacing:.1em;}
+.side .nm em{font-style:normal;font-family:var(--f-body);font-weight:400;font-size:.85rem;color:var(--muted);margin-left:6px;}
+.side p{font-size:.93rem;}
+.vs{display:grid;grid-template-columns:minmax(0, 1fr) auto minmax(0, 1fr);gap:8px;align-items:center;}
+.vs .b{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:4px;background:var(--bg);min-width:0;}
+.vs .b b{font-family:var(--f-display);font-size:1.05rem;}
+.vs .b b span{font-family:var(--f-hanja);font-weight:500;font-size:.85rem;color:var(--muted);margin-left:3px;}
+.vs .ln{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--muted);}
+.vs .ln .dots i,.vs .ln .dots .zero{width:9px;height:9px;}
+.vs .ln .dots{gap:3px;min-height:9px;}
+.vs .arrow{color:var(--muted);}
+.foot{display:grid;gap:6px;font-size:.82rem;color:var(--muted);}
+.foot p{max-width:68ch;}
+.copying .saju,.copying .tiles,.copying .sum,.copying .vs{display:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">두 사람을 위한 필명 안내</p>
+  <h1>세진·소연 필명 노트</h1>
+  <p class="lead">사주에 없는 물과 하나뿐인 쇠만 담은 필명입니다. 사주 풀이는 <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>를 따랐습니다.</p>
+  <button type="button" class="copy-btn copy-all" data-copy="all">전체 복사</button>
+  <p class="vh" id="copy-status" aria-live="polite"></p>
+</header>
+
+<section id="need">
+  <div class="head">
+    <p class="eyebrow">두 분에게 필요한 것</p>
+    <h2>물과 쇠만 넣었습니다</h2>
+  </div>
+  <div class="saju" aria-label="두 분 사주의 오행">
+    <div class="row"><span class="who">세진</span><span class="els"><span>흙 <span class="dots e-earth" aria-label="3개"><i></i><i></i><i></i></span></span><span>불 <span class="dots e-fire" aria-label="3개"><i></i><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span>물 <span class="dots" aria-label="없음"><span class="zero"></span></span></span><span>나무 <span class="dots e-wood" aria-label="1개"><i></i></span></span></span></div>
+    <div class="row"><span class="who">소연</span><span class="els"><span>흙 <span class="dots e-earth" aria-label="5개"><i></i><i></i><i></i><i></i><i></i></span></span><span>불 <span class="dots e-fire" aria-label="2개"><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span>물 <span class="dots" aria-label="없음"><span class="zero"></span></span></span><span>나무 <span class="dots" aria-label="없음"><span class="zero"></span></span></span></span></div>
+  </div>
+  <p class="copy-only">세진: 흙 3, 불 3, 쇠 1, 물 없음, 나무 1 / 소연: 흙 5, 불 2, 쇠 1, 물 없음, 나무 없음</p>
+  <p class="prose">두 분 모두 물이 하나도 없고 쇠는 하나뿐입니다. 불과 흙은 넘칩니다.</p>
+
+  <div class="key">
+    <h3>오행끼리의 관계로 보면</h3>
+    <ul class="rel">
+      <li><span class="pairc"><span class="chip c-metal">쇠</span><span class="op">→</span><span class="chip c-water">물</span></span><p><b>쇠는 물을 낳습니다(금생수).</b> 차가운 쇠그릇 겉에 물방울이 맺히는 모습으로 흔히 설명합니다. 물과 쇠를 함께 넣으면 쇠가 물을 계속 대 줍니다.</p></li>
+      <li><span class="pairc"><span class="chip c-water">물</span><span class="op">⊣</span><span class="chip c-fire">불</span></span><p><b>물은 불을 끕니다(수극화).</b> 넘치는 생각과 걱정을 식힙니다.</p></li>
+      <li><span class="pairc"><span class="chip c-fire">불</span><span class="op">⊣</span><span class="chip c-metal">쇠</span></span><p><b>불은 쇠를 녹입니다(화극금).</b> 사주 노트에서 말과 글이 막히기 쉽다고 한 이유입니다.</p></li>
+      <li><span class="pairc"><span class="chip c-earth">흙</span><span class="op">⊣</span><span class="chip c-water">물</span></span><p><b>흙은 물을 막습니다(토극수).</b> 흙이 많은 사주에 흙을 더하면 넣은 물마저 막힙니다.</p></li>
+      <li><span class="pairc"><span class="chip c-wood">나무</span><span class="op">→</span><span class="chip c-fire">불</span></span><p><b>나무는 불을 키웁니다(목생화).</b> 그래서 나무도 넣지 않았습니다.</p></li>
+    </ul>
+  </div>
+
+  <div class="how">
+    <div><h3>한자는 모두 물</h3><p>삼수변(氵)이 붙은 물 한자만 썼습니다.</p></div>
+    <div><h3>첫소리는 모두 쇠</h3><p>잇소리 ㅅ·ㅈ·ㅊ은 쇠입니다. 불(ㄴ·ㄷ·ㄹ·ㅌ), 나무(ㄱ·ㅋ), 학파에 따라 흙이 되는 소리(ㅇ·ㅎ·ㅁ·ㅂ·ㅍ)는 뺐습니다.</p></div>
+    <div><h3>받침은 없음</h3><p>받침 ㄴ·ㄹ은 불, ㅇ·ㅁ·ㅂ은 흙이 될 수 있어서 받침 없는 글자만 썼습니다.</p></div>
+  </div>
+</section>
+
+<section id="sejin">
+  <div class="head"><h2>세진 님</h2></div>
+  <div class="hero">
+    <div class="top"><span class="chip s-now">권장</span><p class="name">지세주</p><p class="hz">池洗澍</p><p class="rom">Ji Seju</p></div>
+    <div class="tiles">
+      <div class="tile"><span class="hj">池</span><span class="mn">못 지</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
+      <div class="tile"><span class="hj">洗</span><span class="mn">씻을 세</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅅ 쇠</span></span></div>
+      <div class="tile"><span class="hj">澍</span><span class="mn">단비 주</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
+    </div>
+    <p class="sum"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="3개"><i></i><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+    <p class="copy-only">池(못 지) 洗(씻을 세) 澍(단비 주): 물 한자 3, 쇠 3(첫소리 ㅈ·ㅅ·ㅈ), 불·흙·나무 없음</p>
+    <p class="mean">단비(澍)로 씻어(洗) 맑게 채운 못(池)입니다. 못은 물을 가두어 두는 곳이라, 사주 노트에서 한꺼번에 들어와 빨리 나간다고 한 돈과 여유(물)를 담아 두는 이름으로 읽을 수 있습니다. 씻어 낸다는 뜻은 불합리한 것을 짚는 세진 님의 풍자와도 이어집니다.</p>
+  </div>
+  <div class="side">
+    <p class="lab">두 글자로 쓰신다면</p>
+    <p class="nm">세주<span>洗澍</span></p>
+    <p class="sum" style="justify-content:flex-start"><span>물 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+    <p>씻을 세, 단비 주. 본명의 '세'가 남습니다. 세준에서 불이 되는 받침 ㄴ을 뺀 이름이기도 합니다.</p>
+  </div>
+</section>
+
+<section id="soyeon">
+  <div class="head"><h2>소연 님</h2></div>
+  <div class="hero">
+    <div class="top"><span class="chip s-now">권장</span><p class="name">주수지</p><p class="hz">洲洙池</p><p class="rom">Ju Suji</p></div>
+    <div class="tiles">
+      <div class="tile"><span class="hj">洲</span><span class="mn">섬 주</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
+      <div class="tile"><span class="hj">洙</span><span class="mn">물가 수</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅅ 쇠</span></span></div>
+      <div class="tile"><span class="hj">池</span><span class="mn">못 지</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
+    </div>
+    <p class="sum"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="3개"><i></i><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+    <p class="copy-only">洲(섬 주) 洙(물가 수) 池(못 지): 물 한자 3, 쇠 3(첫소리 ㅈ·ㅅ·ㅈ), 불·흙·나무 없음</p>
+    <p class="mean">섬(洲), 물가(洙), 못(池): 세 글자가 모두 물이 있는 곳입니다. 洲에는 대륙이라는 뜻도 있어 여러 나라를 오가는 일과 이어집니다. 한여름에 태어나 불이 세고 흙이 다섯이나 되는 사주에 물길을 세 군데 내는 이름입니다.</p>
+  </div>
+
+  <div class="side">
+    <p class="lab">나니를 살린다면</p>
+    <p class="nm">난희c<span>瀾喜</span><em>말할 때 [나니씨]</em></p>
+    <p>난희는 말할 때 흔히 [나니]로 소리 납니다. 부르는 이름은 그대로 두고, 적는 글자만 난희로 바꾸는 방법입니다.</p>
+    <div class="vs">
+      <div class="b"><b>나니c</b><span class="ln">물 <span class="dots" aria-label="없음"><span class="zero"></span></span></span><span class="ln">쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="ln">불 <span class="dots e-fire" aria-label="2개"><i></i><i></i></span></span></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class="b"><b>난희c<span>瀾喜</span></b><span class="ln">물 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></span><span class="ln">쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="ln">불 <span class="dots e-fire" aria-label="1개"><i></i></span></span></div>
+    </div>
+    <p class="copy-only">나니c(물 0, 쇠 1, 불 2)를 난희c(瀾喜)로 적으면 물 2, 쇠 1, 불 1이 됩니다.</p>
+    <ul class="dot">
+      <li>瀾(큰 물결 란)과 喜(기쁠 희)는 모두 물 한자입니다. 물이 ㄴ 소리의 불을 누릅니다(수극화).</li>
+      <li>c(씨)의 ㅆ은 잇소리라 쇠입니다. 지금처럼 c를 붙여 쓰면 쇠가 하나 더해집니다.</li>
+      <li>ㄴ의 불은 남기 때문에 주수지보다 기능이 낮습니다. 책에는 주수지를 쓰고, 나니c는 SNS 이름으로 두는 방법도 있습니다.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <p>ㅇ·ㅎ과 ㅁ·ㅂ·ㅍ은 『훈민정음』 해례본과 『훈민정음운해』가 오행을 서로 반대로 봅니다. 지세주·세주·주수지는 두 기준 모두에서 쇠인 ㅅ·ㅈ·ㅊ만 썼습니다. 난희의 ㅎ은 기준에 따라 물 또는 흙이고, 받침까지 보는 방식에서는 받침 ㄴ이 불이라 불이 하나 더 있습니다.</p>
+  <p>한자 오행은 네임차트와 사주플러스 두 곳의 값이 같은 글자만 썼습니다. 사주플러스는 喜를 불용문자로 표시합니다. 표시가 없는 같은 물 한자로는 囍(쌍희 희)가 있습니다.</p>
+  <p>리디 작가 검색에서 지세주·세주·주수지와 같은 이름의 작가는 찾지 못했고, '난희'라는 작가는 한 명 있습니다. 성명학은 과학적으로 검증된 방법이 아닙니다.</p>
+  <p>출처: <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>, 네임차트(namechart.kr), 사주플러스 한자사전(hanja.sajuplus.net), 리디(ridibooks.com), 김만태(2026)와 김민경·조기룡(2026)의 소리 오행 논문(KCI). 2026년 11월 10일 확인.</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var status = document.getElementById('copy-status');
+  function textOf(el){
+    var root = document.documentElement;
+    var ds = el.querySelectorAll('details'), was = [];
+    for (var i = 0; i < ds.length; i++) { was.push(ds[i].open); ds[i].open = true; }
+    root.classList.add('copying');
+    var t = el.innerText;
+    root.classList.remove('copying');
+    for (var k = 0; k < ds.length; k++) { ds[k].open = was[k]; }
+    return t.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+  }
+  function legacyCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.top = '0';
+    ta.style.left = '0';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+  function selectEl(el){
+    var sel = window.getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(el);
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  function flash(btn, label){
+    var original = btn.getAttribute('data-label') || btn.textContent;
+    btn.setAttribute('data-label', original);
+    btn.textContent = label;
+    clearTimeout(btn._copyTimer);
+    btn._copyTimer = setTimeout(function(){ btn.textContent = original; }, 2000);
+  }
+  function report(msg){ if (status) status.textContent = msg; }
+  document.addEventListener('click', function(ev){
+    var btn = ev.target.closest ? ev.target.closest('.copy-btn') : null;
+    if (!btn) return;
+    var key = btn.getAttribute('data-copy');
+    var el = key === 'all' ? document.querySelector('.wrap') : document.getElementById(key);
+    if (!el) return;
+    var text = textOf(el);
+    function done(){ flash(btn, '복사됨'); report('복사했습니다.'); }
+    function fallback(){
+      if (legacyCopy(text)) { done(); return; }
+      selectEl(el);
+      flash(btn, '선택됨');
+      report('내용을 선택했습니다. 복사 메뉴를 눌러 복사하세요.');
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } else {
+      fallback();
+    }
+  });
+})();
+</script>
+</body>
+</html>
