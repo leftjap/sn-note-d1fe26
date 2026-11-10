@@ -169,6 +169,13 @@ section{gap:16px;padding-block:30px;}
 .c-earth{color:var(--earth);background:var(--earth-bg);}
 .c-fire{color:var(--fire);background:var(--fire-bg);}
 .c-wood{color:var(--wood);background:var(--wood-bg);}
+.dots i.ring{background:transparent;border:2px solid var(--water);}
+.picks{display:grid;gap:8px;grid-template-columns:1fr 1fr;}
+.picks a{display:grid;gap:2px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
+.picks a:hover{border-color:var(--accent);}
+.picks .who{font-size:.78rem;color:var(--muted);font-weight:600;}
+.picks .nm{font-family:var(--f-display);font-weight:700;font-size:1.5rem;line-height:1.2;}
+.picks .nm small{font-family:var(--f-body);font-weight:400;font-size:.8rem;color:var(--muted);margin-left:6px;}
 .saju{display:grid;gap:8px;}
 .saju .row{display:grid;grid-template-columns:2.6em minmax(0, 1fr);gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 12px;}
 .saju .who{font-weight:600;}
@@ -176,50 +183,44 @@ section{gap:16px;padding-block:30px;}
 .saju .els span{display:inline-flex;align-items:center;gap:5px;}
 .saju .dots i,.saju .dots .zero{width:10px;height:10px;}
 .saju .dots{gap:3px;min-height:10px;}
-.rel{list-style:none;padding:0;display:grid;gap:8px;}
-.rel li{display:grid;grid-template-columns:1fr;gap:4px;align-items:start;}
-@media (min-width:560px){.rel li{grid-template-columns:7.4em minmax(0, 1fr);gap:12px;}}
-.rel .pairc{display:flex;align-items:center;gap:4px;white-space:nowrap;padding-top:1px;}
-.rel .op{color:var(--muted);font-size:.85rem;}
-.rel p{font-size:.93rem;}
-.rel b{font-weight:600;}
-.how{display:grid;gap:8px;grid-template-columns:1fr;}
-@media (min-width:700px){.how{grid-template-columns:repeat(3, minmax(0, 1fr));}}
-.how div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:4px;align-content:start;}
-.how h3{font-size:.98rem;}
-.how p{font-size:.88rem;color:var(--muted);}
-.hero{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px 18px;display:grid;gap:16px;}
-.hero .top{display:grid;gap:4px;justify-items:center;text-align:center;}
-.hero .name{font-family:var(--f-display);font-weight:700;font-size:clamp(2.5rem, 12vw, 3.2rem);line-height:1.1;letter-spacing:.06em;}
-.hero .hz{font-family:var(--f-hanja);font-weight:700;font-size:1.3rem;letter-spacing:.3em;color:var(--muted);padding-left:.3em;}
-.hero .rom{font-size:.82rem;color:var(--muted);letter-spacing:.06em;}
-.tiles{display:grid;grid-template-columns:repeat(3, minmax(0, 1fr));gap:8px;}
-.tile{border:1px solid var(--line);border-radius:12px;padding:12px 4px 10px;display:grid;justify-items:center;gap:5px;text-align:center;min-width:0;background:var(--bg);}
-.tile .hj{font-family:var(--f-hanja);font-weight:700;font-size:1.9rem;line-height:1.15;}
-.tile .mn{font-size:.8rem;color:var(--muted);}
-.tile .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:3px;}
-.tile .chip{font-size:.7rem;padding:0 7px;}
-.sum{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;font-size:.88rem;}
-.sum span{display:inline-flex;align-items:center;gap:6px;}
-.sum .none{color:var(--muted);}
-.mean{font-size:.97rem;}
-.side{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:10px;}
-.side .lab{font-size:.78rem;font-weight:600;letter-spacing:.06em;color:var(--muted);}
-.side .nm{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1.2;}
-.side .nm span{font-family:var(--f-hanja);font-size:1.05rem;color:var(--muted);margin-left:8px;letter-spacing:.1em;}
-.side .nm em{font-style:normal;font-family:var(--f-body);font-weight:400;font-size:.85rem;color:var(--muted);margin-left:6px;}
-.side p{font-size:.93rem;}
-.vs{display:grid;grid-template-columns:minmax(0, 1fr) auto minmax(0, 1fr);gap:8px;align-items:center;}
-.vs .b{border:1px solid var(--line);border-radius:10px;padding:10px 12px;display:grid;gap:4px;background:var(--bg);min-width:0;}
-.vs .b b{font-family:var(--f-display);font-size:1.05rem;}
-.vs .b b span{font-family:var(--f-hanja);font-weight:500;font-size:.85rem;color:var(--muted);margin-left:3px;}
-.vs .ln{display:flex;align-items:center;gap:6px;font-size:.78rem;color:var(--muted);}
-.vs .ln .dots i,.vs .ln .dots .zero{width:9px;height:9px;}
-.vs .ln .dots{gap:3px;min-height:9px;}
-.vs .arrow{color:var(--muted);}
+.scene{display:grid;gap:10px;grid-template-columns:1fr;}
+@media (min-width:700px){.scene{grid-template-columns:repeat(2, minmax(0, 1fr));}}
+.scene div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:6px;align-content:start;}
+.scene h3{font-size:1.04rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.scene p{font-size:.93rem;}
+.snd{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+.snd th,.snd td{padding:9px 12px;text-align:left;border-top:1px solid var(--line);vertical-align:middle;}
+.snd thead th{border-top:0;font-size:.78rem;color:var(--muted);font-weight:600;}
+.snd td:first-child{font-weight:600;white-space:nowrap;letter-spacing:.06em;}
+.snd td:nth-child(2){white-space:nowrap;}
+.snd td:last-child{color:var(--muted);font-size:.88rem;}
+.example{background:var(--accent-soft);border-radius:12px;padding:14px 16px;display:grid;gap:8px;}
+.example h3{font-size:1.02rem;}
+.example p{font-size:.93rem;}
+.legend3{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.84rem;color:var(--muted);align-items:center;}
+.legend3 span{display:inline-flex;align-items:center;gap:6px;}
+.opts{display:grid;gap:10px;grid-template-columns:1fr;}
+@media (min-width:700px){.opts{grid-template-columns:repeat(2, minmax(0, 1fr));}}
+.opt{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;gap:8px;align-content:start;min-width:0;}
+.opt.best{border:2px solid var(--accent);}
+.opt .hd{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+.opt .nm{font-family:var(--f-display);font-weight:700;font-size:1.9rem;line-height:1.15;}
+.opt .gl{font-size:.86rem;color:var(--muted);}
+.opt .badges{display:flex;gap:5px;flex-wrap:wrap;}
+.opt .hz{font-size:.86rem;color:var(--muted);}
+.opt .hz b{font-family:var(--f-hanja);font-weight:700;color:var(--ink);font-size:1.02rem;letter-spacing:.08em;margin-right:6px;}
+.opt .sc{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.84rem;}
+.opt .sc span{display:inline-flex;align-items:center;gap:5px;}
+.opt .sc .none{color:var(--muted);}
+.opt p.tx{font-size:.93rem;}
+.subh{display:grid;gap:4px;margin-top:8px;}
+.subh h3{font-size:1.06rem;}
+.subh p{font-size:.9rem;color:var(--muted);}
+.opts.small .opt{padding:14px 16px;}
+.opts.small .nm{font-size:1.5rem;}
 .foot{display:grid;gap:6px;font-size:.82rem;color:var(--muted);}
-.foot p{max-width:68ch;}
-.copying .saju,.copying .tiles,.copying .sum,.copying .vs{display:none;}
+.foot p{max-width:70ch;}
+.copying .saju,.copying .opt .sc,.copying .legend3,.copying .picks{display:none;}
 </style>
 </head>
 <body>
@@ -228,99 +229,175 @@ section{gap:16px;padding-block:30px;}
 <header class="top">
   <p class="eyebrow">두 사람을 위한 필명 안내</p>
   <h1>세진·소연 필명 노트</h1>
-  <p class="lead">사주에 없는 물과 하나뿐인 쇠만 담은 필명입니다. 사주 풀이는 <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>를 따랐습니다.</p>
+  <p class="lead">사주에 필요한 물과 쇠를 채우는 필명 후보입니다. 지금 쓰시는 이름부터 따져 보고, 두 글자 이름을 중심으로 골랐습니다. 사주 풀이는 <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>를 따랐습니다.</p>
+  <div class="picks">
+    <a href="#sejin"><span class="who">세진 님 권장</span><span class="nm">지오<small>지금 이름</small></span></a>
+    <a href="#soyeon"><span class="who">소연 님 권장</span><span class="nm">소하<small>Soha</small></span></a>
+  </div>
+  <p class="copy-only">권장: 세진 님 지오(지금 이름), 소연 님 소하</p>
   <button type="button" class="copy-btn copy-all" data-copy="all">전체 복사</button>
   <p class="vh" id="copy-status" aria-live="polite"></p>
 </header>
 
-<section id="need">
+<section id="why">
   <div class="head">
-    <p class="eyebrow">두 분에게 필요한 것</p>
-    <h2>물과 쇠만 넣었습니다</h2>
+    <p class="eyebrow">왜 물과 쇠일까요</p>
+    <h2>두 분 사주는 한여름의 마른 밭입니다</h2>
+    <p class="prose">두 분은 밭의 흙(기토)으로 태어났습니다. 한여름에 태어나 햇볕(불)은 뜨겁고, 흙은 넘치고, 물은 한 방울도 없습니다.</p>
   </div>
   <div class="saju" aria-label="두 분 사주의 오행">
     <div class="row"><span class="who">세진</span><span class="els"><span>흙 <span class="dots e-earth" aria-label="3개"><i></i><i></i><i></i></span></span><span>불 <span class="dots e-fire" aria-label="3개"><i></i><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span>물 <span class="dots" aria-label="없음"><span class="zero"></span></span></span><span>나무 <span class="dots e-wood" aria-label="1개"><i></i></span></span></span></div>
     <div class="row"><span class="who">소연</span><span class="els"><span>흙 <span class="dots e-earth" aria-label="5개"><i></i><i></i><i></i><i></i><i></i></span></span><span>불 <span class="dots e-fire" aria-label="2개"><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span>물 <span class="dots" aria-label="없음"><span class="zero"></span></span></span><span>나무 <span class="dots" aria-label="없음"><span class="zero"></span></span></span></span></div>
   </div>
   <p class="copy-only">세진: 흙 3, 불 3, 쇠 1, 물 없음, 나무 1 / 소연: 흙 5, 불 2, 쇠 1, 물 없음, 나무 없음</p>
-  <p class="prose">두 분 모두 물이 하나도 없고 쇠는 하나뿐입니다. 불과 흙은 넘칩니다.</p>
-
-  <div class="key">
-    <h3>오행끼리의 관계로 보면</h3>
-    <ul class="rel">
-      <li><span class="pairc"><span class="chip c-metal">쇠</span><span class="op">→</span><span class="chip c-water">물</span></span><p><b>쇠는 물을 낳습니다(금생수).</b> 차가운 쇠그릇 겉에 물방울이 맺히는 모습으로 흔히 설명합니다. 물과 쇠를 함께 넣으면 쇠가 물을 계속 대 줍니다.</p></li>
-      <li><span class="pairc"><span class="chip c-water">물</span><span class="op">⊣</span><span class="chip c-fire">불</span></span><p><b>물은 불을 끕니다(수극화).</b> 넘치는 생각과 걱정을 식힙니다.</p></li>
-      <li><span class="pairc"><span class="chip c-fire">불</span><span class="op">⊣</span><span class="chip c-metal">쇠</span></span><p><b>불은 쇠를 녹입니다(화극금).</b> 사주 노트에서 말과 글이 막히기 쉽다고 한 이유입니다.</p></li>
-      <li><span class="pairc"><span class="chip c-earth">흙</span><span class="op">⊣</span><span class="chip c-water">물</span></span><p><b>흙은 물을 막습니다(토극수).</b> 흙이 많은 사주에 흙을 더하면 넣은 물마저 막힙니다.</p></li>
-      <li><span class="pairc"><span class="chip c-wood">나무</span><span class="op">→</span><span class="chip c-fire">불</span></span><p><b>나무는 불을 키웁니다(목생화).</b> 그래서 나무도 넣지 않았습니다.</p></li>
-    </ul>
-  </div>
-
-  <div class="how">
-    <div><h3>한자는 모두 물</h3><p>삼수변(氵)이 붙은 물 한자만 썼습니다.</p></div>
-    <div><h3>첫소리는 모두 쇠</h3><p>잇소리 ㅅ·ㅈ·ㅊ은 쇠입니다. 불(ㄴ·ㄷ·ㄹ·ㅌ), 나무(ㄱ·ㅋ), 학파에 따라 흙이 되는 소리(ㅇ·ㅎ·ㅁ·ㅂ·ㅍ)는 뺐습니다.</p></div>
-    <div><h3>받침은 없음</h3><p>받침 ㄴ·ㄹ은 불, ㅇ·ㅁ·ㅂ은 흙이 될 수 있어서 받침 없는 글자만 썼습니다.</p></div>
+  <div class="scene">
+    <div><h3>비가 먼저입니다 <span class="chip c-water">물 · 1순위</span></h3><p>마른 밭에 가장 먼저 필요한 것은 비입니다. 사주 노트에서 물은 돈, 휴식, 잠, 여유를 뜻했습니다.</p></div>
+    <div><h3>샘을 파 둡니다 <span class="chip c-metal">쇠 · 2순위</span></h3><p>쇠는 물을 낳습니다(금생수). 흔히 바위틈에서 샘물이 솟는 모습으로 설명합니다. 비는 그치지만 샘은 물을 계속 댑니다. 쇠는 말과 글이기도 해서 글 쓰는 이름에 잘 맞습니다.</p></div>
+    <div><h3>장작은 넣지 않습니다 <span class="chip c-wood">나무</span></h3><p>소연 님은 나무도 0이지만, 나무는 불을 키우는 땔감입니다(목생화). 이미 뜨거운 밭에 장작을 넣으면 불만 커집니다. 그래서 모자라도 넣지 않습니다.</p></div>
+    <div><h3>흙과 불은 더하지 않습니다 <span class="chip c-earth">흙</span><span class="chip c-fire">불</span></h3><p>흙이 넘치면 넣은 물을 빨아들이고(토극수), 불이 세면 쇠를 녹입니다(화극금). 사주 노트에서 생각이 많을수록 말과 글이 막힌다고 한 이유입니다.</p></div>
   </div>
 </section>
 
-<section id="sejin">
-  <div class="head"><h2>세진 님</h2></div>
-  <div class="hero">
-    <div class="top"><span class="chip s-now">권장</span><p class="name">지세주</p><p class="hz">池洗澍</p><p class="rom">Ji Seju</p></div>
-    <div class="tiles">
-      <div class="tile"><span class="hj">池</span><span class="mn">못 지</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
-      <div class="tile"><span class="hj">洗</span><span class="mn">씻을 세</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅅ 쇠</span></span></div>
-      <div class="tile"><span class="hj">澍</span><span class="mn">단비 주</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
-    </div>
-    <p class="sum"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="3개"><i></i><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
-    <p class="copy-only">池(못 지) 洗(씻을 세) 澍(단비 주): 물 한자 3, 쇠 3(첫소리 ㅈ·ㅅ·ㅈ), 불·흙·나무 없음</p>
-    <p class="mean">단비(澍)로 씻어(洗) 맑게 채운 못(池)입니다. 못은 물을 가두어 두는 곳이라, 사주 노트에서 한꺼번에 들어와 빨리 나간다고 한 돈과 여유(물)를 담아 두는 이름으로 읽을 수 있습니다. 씻어 낸다는 뜻은 불합리한 것을 짚는 세진 님의 풍자와도 이어집니다.</p>
+<section id="how">
+  <div class="head">
+    <p class="eyebrow">이름이 기운을 더하는 법</p>
+    <h2>소리와 한자, 두 군데에서 더합니다</h2>
+    <p class="prose">『훈민정음』 해례본(1446)은 소리가 나는 자리에 따라 첫소리를 오행으로 나눕니다.</p>
   </div>
-  <div class="side">
-    <p class="lab">두 글자로 쓰신다면</p>
-    <p class="nm">세주<span>洗澍</span></p>
-    <p class="sum" style="justify-content:flex-start"><span>물 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
-    <p>씻을 세, 단비 주. 본명의 '세'가 남습니다. 세준에서 불이 되는 받침 ㄴ을 뺀 이름이기도 합니다.</p>
+  <table class="snd">
+    <thead><tr><th>첫소리</th><th>오행</th><th>해례본의 설명</th></tr></thead>
+    <tbody>
+      <tr><td>ㅅ ㅈ ㅊ</td><td><span class="chip c-metal">쇠</span></td><td>이는 단단해서 끊어 내니 쇠</td></tr>
+      <tr><td>ㅇ ㅎ</td><td><span class="chip c-water">물</span></td><td>목구멍은 깊고 촉촉하니 물</td></tr>
+      <tr><td>ㄴ ㄷ ㄹ ㅌ</td><td><span class="chip c-fire">불</span></td><td>혀는 날카롭고 잘 움직이니 불</td></tr>
+      <tr><td>ㄱ ㅋ</td><td><span class="chip c-wood">나무</span></td><td>어금니는 어긋나고 길어서 나무</td></tr>
+      <tr><td>ㅁ ㅂ ㅍ</td><td><span class="chip c-earth">흙</span></td><td>입술은 모나고 맞닿으니 흙</td></tr>
+    </tbody>
+  </table>
+  <p class="note">『훈민정음운해』(1750)를 따르는 작명가는 ㅇ·ㅎ을 흙, ㅁ·ㅂ·ㅍ을 물로 봅니다.</p>
+  <div class="example">
+    <h3>예: 지오</h3>
+    <p>ㅈ은 잇소리라 쇠, ㅇ은 목구멍소리라 물입니다. 한자를 池(못 지)와 吾(나 오)로 정하면 두 글자 모두 물 한자라 물이 둘 더해집니다. 필명은 한글로만 써도 되지만, 한자를 정해 두면 겉은 한글 이름이고 속에는 물을 담는 셈입니다.</p>
+    <p>지금처럼 c를 붙이면 [씨]의 ㅆ도 잇소리라 쇠가 하나 더해집니다.</p>
+  </div>
+  <p class="prose">우리말에는 물을 뜻하는 고운 말(이슬, 여울, 윤슬, 가람)이 많지만, 대부분 불이 되는 ㄹ·ㄴ이나 나무가 되는 ㄱ이 들어갑니다. 그래서 우리말 이름은 물 소리가 가장 많은 여울만 후보에 넣었습니다.</p>
+  <p class="legend3"><span><span class="dots e-water" aria-label="1개"><i></i></span> 물(확실)</span><span><span class="dots e-water" aria-label="1개"><i class="ring"></i></span> 물(해례본 기준)</span><span><span class="dots e-metal" aria-label="1개"><i></i></span> 쇠</span><span><span class="dots e-fire" aria-label="1개"><i></i></span> 불</span></p>
+</section>
+
+<section id="sejin">
+  <div class="head">
+    <p class="eyebrow">세진 님</p>
+    <h2>지금 쓰시는 지오를 권장합니다</h2>
+  </div>
+  <div class="opts">
+    <div class="opt best">
+      <div class="hd"><span class="nm">지오</span><span class="gl">Gio · 이탈리아 남자 이름</span></div>
+      <div class="badges"><span class="chip s-now">권장</span><span class="chip s-plain">지금 쓰는 이름</span></div>
+      <p class="hz"><b>池吾</b>못 지 · 나 오</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 3(한자 2, ㅇ 1), 쇠 1(ㅈ)</p>
+      <p class="tx">池吾는 '연못 같은 나'로 읽을 수 있습니다. 사주 노트에서 세진 님 돈은 한꺼번에 들어와 빨리 나간다고 했는데, 연못은 들어온 물을 담아 두는 곳입니다. 지금처럼 지오c로 쓰면 쇠가 하나 더해집니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">주하</span><span class="gl">Juha · 핀란드 남자 이름</span></div>
+      <p class="hz"><b>澍河</b>단비 주 · 강물 하</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 3(한자 2, ㅎ 1), 쇠 1(ㅈ)</p>
+      <p class="tx">아랍 민담에서 우스개 이야기로 유명한 인물의 이름이기도 합니다. 이 인물을 짧은 우스개와 풍자적인 일화로 알려진 나스레딘과 같은 인물로 보기도 합니다. 한국에서는 여자아이 이름으로 더 많이 씁니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">제이</span><span class="gl">Jay · 영어 이름</span></div>
+      <p class="hz"><b>濟珥</b>건널 제 · 귀고리 이</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="2개"><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 2(한자 1, ㅇ 1), 쇠 2(ㅈ, 珥)</p>
+      <p class="tx">짧고 어느 나라에서나 읽힙니다. 지오보다 물은 하나 적고 쇠는 하나 많습니다.</p>
+    </div>
+  </div>
+  <div class="subh"><h3>세 글자로 쓰신다면</h3></div>
+  <div class="opts small">
+    <div class="opt">
+      <div class="hd"><span class="nm">세이지</span><span class="gl">Sage · Seiji</span></div>
+      <p class="hz"><b>洗珥池</b>씻을 세 · 귀고리 이 · 못 지</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="3개"><i></i><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 3(한자 2, ㅇ 1), 쇠 3(ㅅ, ㅈ, 珥)</p>
+      <p class="tx">영어 이름 Sage(현자, 허브 세이지)와 일본 남자 이름 세이지와 소리가 같습니다. 본명의 '세'가 남고, 세진 님 후보 가운데 물과 쇠가 가장 많습니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">지오c</span><span class="gl">[지오씨] · 지금 이름 그대로</span></div>
+      <p class="hz"><b>池吾</b>못 지 · 나 오</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 3(한자 2, ㅇ 1), 쇠 2(ㅈ, c의 ㅆ)</p>
+      <p class="tx">c까지 읽으면 세 글자 이름이 됩니다.</p>
+    </div>
   </div>
 </section>
 
 <section id="soyeon">
-  <div class="head"><h2>소연 님</h2></div>
-  <div class="hero">
-    <div class="top"><span class="chip s-now">권장</span><p class="name">주수지</p><p class="hz">洲洙池</p><p class="rom">Ju Suji</p></div>
-    <div class="tiles">
-      <div class="tile"><span class="hj">洲</span><span class="mn">섬 주</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
-      <div class="tile"><span class="hj">洙</span><span class="mn">물가 수</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅅ 쇠</span></span></div>
-      <div class="tile"><span class="hj">池</span><span class="mn">못 지</span><span class="tags"><span class="chip c-water">물</span><span class="chip c-metal">ㅈ 쇠</span></span></div>
-    </div>
-    <p class="sum"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i></i></span></span><span>쇠 <span class="dots e-metal" aria-label="3개"><i></i><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
-    <p class="copy-only">洲(섬 주) 洙(물가 수) 池(못 지): 물 한자 3, 쇠 3(첫소리 ㅈ·ㅅ·ㅈ), 불·흙·나무 없음</p>
-    <p class="mean">섬(洲), 물가(洙), 못(池): 세 글자가 모두 물이 있는 곳입니다. 洲에는 대륙이라는 뜻도 있어 여러 나라를 오가는 일과 이어집니다. 한여름에 태어나 불이 세고 흙이 다섯이나 되는 사주에 물길을 세 군데 내는 이름입니다.</p>
+  <div class="head">
+    <p class="eyebrow">소연 님</p>
+    <h2>소하를 권장하고, 지금 쓰시는 난희도 쓸 수 있습니다</h2>
   </div>
-
-  <div class="side">
-    <p class="lab">나니를 살린다면</p>
-    <p class="nm">난희c<span>瀾喜</span><em>말할 때 [나니씨]</em></p>
-    <p>난희는 말할 때 흔히 [나니]로 소리 납니다. 부르는 이름은 그대로 두고, 적는 글자만 난희로 바꾸는 방법입니다.</p>
-    <div class="vs">
-      <div class="b"><b>나니c</b><span class="ln">물 <span class="dots" aria-label="없음"><span class="zero"></span></span></span><span class="ln">쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="ln">불 <span class="dots e-fire" aria-label="2개"><i></i><i></i></span></span></div>
-      <span class="arrow" aria-hidden="true">→</span>
-      <div class="b"><b>난희c<span>瀾喜</span></b><span class="ln">물 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></span><span class="ln">쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="ln">불 <span class="dots e-fire" aria-label="1개"><i></i></span></span></div>
+  <div class="opts">
+    <div class="opt best">
+      <div class="hd"><span class="nm">소하</span><span class="gl">Soha · 아랍 여자 이름</span></div>
+      <div class="badges"><span class="chip s-now">권장</span></div>
+      <p class="hz"><b>瀟河</b>맑을 소 · 강물 하</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 3(한자 2, ㅎ 1), 쇠 1(ㅅ)</p>
+      <p class="tx">큰곰자리의 작은 별 알코르를 가리키는 이름이기도 해서 하늘을 오가는 일과 이어집니다. 본명의 '소'가 남습니다.</p>
     </div>
-    <p class="copy-only">나니c(물 0, 쇠 1, 불 2)를 난희c(瀾喜)로 적으면 물 2, 쇠 1, 불 1이 됩니다.</p>
-    <ul class="dot">
-      <li>瀾(큰 물결 란)과 喜(기쁠 희)는 모두 물 한자입니다. 물이 ㄴ 소리의 불을 누릅니다(수극화).</li>
-      <li>c(씨)의 ㅆ은 잇소리라 쇠입니다. 지금처럼 c를 붙여 쓰면 쇠가 하나 더해집니다.</li>
-      <li>ㄴ의 불은 남기 때문에 주수지보다 기능이 낮습니다. 책에는 주수지를 쓰고, 나니c는 SNS 이름으로 두는 방법도 있습니다.</li>
-    </ul>
+    <div class="opt">
+      <div class="hd"><span class="nm">난희</span><span class="gl">말할 때 [나니]</span></div>
+      <div class="badges"><span class="chip s-plain">지금 쓰는 이름</span></div>
+      <p class="hz"><b>瀾喜</b>큰 물결 란 · 기쁠 희</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>불 <span class="dots e-fire" aria-label="1개"><i></i></span></span></p>
+      <p class="copy-only">물 3(한자 2, ㅎ 1), 불 1(ㄴ)</p>
+      <p class="tx">부르는 소리는 나니 그대로 두고, 적는 글자만 난희로 바꾸는 방법입니다. 나니로 적으면 ㄴ이 두 번이라 불이 둘입니다. 난희로 적으면 두 번째 ㄴ 자리에 물이 되는 ㅎ이 들어가고, 한자 둘도 모두 물입니다. 다만 첫 ㄴ의 불은 남고, 받침까지 보는 방식에서는 받침 ㄴ도 불이라 소하보다 한 단계 아래입니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">시아</span><span class="gl">Sia · 영어 여자 이름</span></div>
+      <p class="hz"><b>翅我</b>날개 시 · 나 아</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="2개"><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 2(한자 1, ㅇ 1), 쇠 2(ㅅ, 我)</p>
+      <p class="tx">翅는 날개라서 비행과 이어집니다. 같은 이름의 가수(Sia)가 있습니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">지아</span><span class="gl">Gia · 이탈리아 여자 이름</span></div>
+      <p class="hz"><b>池我</b>못 지 · 나 아</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="2개"><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 2(한자 1, ㅇ 1), 쇠 2(ㅈ, 我)</p>
+      <p class="tx">이탈리아어에서 Gia는 Gio(지오)의 여자 이름입니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">여울</span><span class="gl">우리말</span></div>
+      <p class="hz">한자 없이 씁니다</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="2개"><i class="ring"></i><i class="ring"></i></span></span><span>불 <span class="dots e-fire" aria-label="1개"><i></i></span></span></p>
+      <p class="copy-only">물 2(ㅇ 2), 불 1(받침 ㄹ)</p>
+      <p class="tx">강이나 바다에서 바닥이 얕거나 폭이 좁아 물살이 세게 흐르는 곳을 뜻합니다. ㅇ 두 개가 물이고, 받침 ㄹ은 받침까지 보는 방식에서 불입니다.</p>
+    </div>
+  </div>
+  <div class="subh"><h3>세 글자로 쓰신다면</h3><p>지금처럼 c를 붙이면 [씨]의 ㅆ이 쇠를 하나 더합니다.</p></div>
+  <div class="opts small">
+    <div class="opt">
+      <div class="hd"><span class="nm">소하c</span><span class="gl">[소하씨]</span></div>
+      <p class="hz"><b>瀟河</b>맑을 소 · 강물 하</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="2개"><i></i><i></i></span></span><span class="none">불·흙·나무 없음</span></p>
+      <p class="copy-only">물 3(한자 2, ㅎ 1), 쇠 2(ㅅ, c의 ㅆ)</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">난희c</span><span class="gl">[나니씨] · 지금 이름에 가장 가까움</span></div>
+      <p class="hz"><b>瀾喜</b>큰 물결 란 · 기쁠 희</p>
+      <p class="sc"><span>물 <span class="dots e-water" aria-label="3개"><i></i><i></i><i class="ring"></i></span></span><span>쇠 <span class="dots e-metal" aria-label="1개"><i></i></span></span><span>불 <span class="dots e-fire" aria-label="1개"><i></i></span></span></p>
+      <p class="copy-only">물 3(한자 2, ㅎ 1), 쇠 1(c의 ㅆ), 불 1(ㄴ)</p>
+    </div>
   </div>
 </section>
 
 <footer class="foot">
-  <p>ㅇ·ㅎ과 ㅁ·ㅂ·ㅍ은 『훈민정음』 해례본과 『훈민정음운해』가 오행을 서로 반대로 봅니다. 지세주·세주·주수지는 두 기준 모두에서 쇠인 ㅅ·ㅈ·ㅊ만 썼습니다. 난희의 ㅎ은 기준에 따라 물 또는 흙이고, 받침까지 보는 방식에서는 받침 ㄴ이 불이라 불이 하나 더 있습니다.</p>
-  <p>한자 오행은 네임차트와 사주플러스 두 곳의 값이 같은 글자만 썼습니다. 사주플러스는 喜를 불용문자로 표시합니다. 표시가 없는 같은 물 한자로는 囍(쌍희 희)가 있습니다.</p>
-  <p>리디 작가 검색에서 지세주·세주·주수지와 같은 이름의 작가는 찾지 못했고, '난희'라는 작가는 한 명 있습니다. 성명학은 과학적으로 검증된 방법이 아닙니다.</p>
-  <p>출처: <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>, 네임차트(namechart.kr), 사주플러스 한자사전(hanja.sajuplus.net), 리디(ridibooks.com), 김만태(2026)와 김민경·조기룡(2026)의 소리 오행 논문(KCI). 2026년 11월 10일 확인.</p>
+  <p>점 읽는 법: 꽉 찬 점은 확실한 기운이고, 테두리만 있는 점은 『훈민정음』 해례본 기준에서만 물인 소리(ㅇ·ㅎ)입니다. 『훈민정음운해』 기준을 따르면 이 점은 흙 하나로 바뀌지만, 지오·주하·소하에는 물 한자 둘이 그대로 남습니다.</p>
+  <p>한자 오행은 네임차트와 사주플러스 두 곳의 값이 같은 글자만 썼습니다. 사주플러스는 喜를 불용문자로 표시합니다. 같은 물 한자로 표시가 없는 글자는 囍(쌍희 희)입니다.</p>
+  <p>c를 [씨]로 읽어 쇠로 센 것은 소리를 기준으로 한 제 해석입니다. 성명학은 과학적으로 검증된 방법이 아닙니다.</p>
+  <p>출처: <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>, 『훈민정음』 해례본 제자해(위키문헌), 네임차트(namechart.kr), 사주플러스 한자사전(hanja.sajuplus.net), 표준국어대사전(여울), 위키낱말사전 Gio·Gia·Juha·Joha·Jay·Sia·Sage·Seiji 항목, 영어 위키백과 Nasreddin·Soha (given name) 항목. 2026년 11월 10일 확인.</p>
 </footer>
 
 </div>
