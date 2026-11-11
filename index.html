@@ -292,6 +292,10 @@ section{gap:16px;padding-block:30px;}
 .alt p{font-size:.9rem;}
 .chip.t4{color:var(--fire);background:var(--fire-bg);}
 @media (min-width:700px){.tiers.four{grid-template-columns:repeat(2, minmax(0, 1fr));}}
+.chip.feel{color:var(--accent);background:var(--accent-soft);}
+.feelmap{display:grid;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
+.feelmap p{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline;font-size:.92rem;}
+.feelmap p b{font-family:var(--f-display);}
 </style>
 </head>
 <body>
@@ -464,26 +468,26 @@ section{gap:16px;padding-block:30px;}
       <p class="th"><span class="chip t1">1티어</span>가장 강함</p>
       <p class="crit">물 한자 둘, 소리가 서로 돕는 순서, 받침 없음</p>
       <p class="nms"><span>세진</span><b>지오</b></p>
-      <p class="nms"><span>소연</span><b>소하</b></p>
+      <p class="nms"><span>소연</span><b>소하 · 지예</b></p>
     </div>
     <div class="tier">
       <p class="th"><span class="chip t2">2티어</span>불 소리 없음</p>
-      <p class="crit">물 한자 둘, 불 소리는 없지만 받침 ㅇ이 있거나 소리가 같은 기운끼리</p>
-      <p class="nms"><span>소연</span><b>소영 · 소쇄</b></p>
+      <p class="crit">물 한자 둘, 불 소리는 없지만 받침 ㅇ이 있음</p>
+      <p class="nms"><span>소연</span><b>소영</b></p>
     </div>
     <div class="tier">
-      <p class="th"><span class="chip t3">3티어</span>받침에 불 하나</p>
-      <p class="crit">물 한자 둘, 받침 ㄴ이 불 하나</p>
-      <p class="nms"><span>소연</span><b>소빈 · 소온</b></p>
+      <p class="th"><span class="chip t3">3티어</span>끝 받침에 불 하나</p>
+      <p class="crit">물 한자 둘, 이름 끝의 받침 ㄴ이 불 하나</p>
+      <p class="nms"><span>소연</span><b>소빈 · 소온 · 자윤 · 정연</b></p>
     </div>
     <div class="tier">
       <p class="th"><span class="chip t4">4티어</span>약점이 큼</p>
-      <p class="crit">물 한자가 하나뿐이거나 불 소리가 둘</p>
+      <p class="crit">물 한자가 하나뿐이거나, 불 소리가 둘이거나, 가운데 받침의 불이 쇠 바로 앞에 옴</p>
       <p class="nms"><span>세진</span><b>이선</b></p>
-      <p class="nms"><span>소연</span><b>난희</b></p>
+      <p class="nms"><span>소연</span><b>청아 · 윤주 · 난희</b></p>
     </div>
   </div>
-  <p class="note">c를 붙이면 소리에 쇠가 하나 더해집니다(제 해석). 지오c, 소하c, 소영c는 c까지 서로 돕는 순서가 이어집니다. 받침 ㄴ으로 끝나는 이름은 c를 붙이면 불 바로 뒤에 쇠가 와서 불이 쇠를 누르는 순서가 되므로, c 없이 쓰는 쪽이 낫습니다.</p>
+  <p class="note">c를 붙이면 소리에 쇠가 하나 더해집니다(제 해석). 지오c, 소하c, 지예c, 소영c는 c까지 서로 돕는 순서가 이어집니다. 받침 ㄴ으로 끝나는 이름은 c를 붙이면 불 바로 뒤에 쇠가 와서 불이 쇠를 누르는 순서가 되므로, c 없이 쓰는 쪽이 낫습니다.</p>
 </section>
 
 <section id="sejin">
@@ -521,21 +525,38 @@ section{gap:16px;padding-block:30px;}
 <section id="soyeon">
   <div class="head">
     <p class="eyebrow">소연 님</p>
-    <h2>1티어 소하c를 권하고, 고를 수 있게 여러 이름을 모았습니다</h2>
-    <p class="prose">아이 이름처럼 들리는 이름과 흔한 이름은 빼고, 소하처럼 호(號) 느낌이 나는 이름을 중심으로 골랐습니다. 본명의 '소'를 살린 이름이 많습니다. 사람 수와 여자 비율은 네임차트 통계입니다.</p>
+    <h2>1티어 소하c를 권하고, 느낌이 다른 이름을 티어별로 모았습니다</h2>
+    <p class="prose">첫 글자와 느낌이 겹치지 않게 골랐고, 이름마다 느낌을 짧게 적었습니다. 사람 수와 여자 비율은 네임차트 통계입니다.</p>
+  </div>
+  <div class="feelmap">
+    <p><span class="chip feel">맑고 단정한</span><b>소하 · 정연 · 청아</b></p>
+    <p><span class="chip feel">산뜻하고 밝은</span><b>지예 · 소빈</b></p>
+    <p><span class="chip feel">부드럽고 넉넉한</span><b>소영 · 소온 · 자윤</b></p>
+    <p><span class="chip feel">차분하고 익숙한</span><b>윤주 · 난희</b></p>
   </div>
 
   <div class="grp"><h3><span class="chip t1">1티어</span> 가장 강함</h3></div>
   <div class="opts">
     <div class="opt best">
       <div class="hd"><span class="nm">소하</span><span class="gl">瀟河</span></div>
-      <div class="badges"><span class="chip t1">1티어</span><span class="chip s-now">권장</span><span class="chip s-soft">547명 · 여자 86%</span></div>
+      <div class="badges"><span class="chip t1">1티어</span><span class="chip s-now">권장</span><span class="chip feel">맑고 단정함</span><span class="chip s-soft">547명 · 여자 86%</span></div>
       <p class="row2"><span class="k">한자</span><b class="hj">瀟河</b>맑을 소 · 강물 하 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
       <p class="row2"><span class="k">소리</span>ㅅ(쇠) · ㅎ <span class="chip s-good">서로 돕는 순서</span><span class="cn">c를 붙여도 같음</span></p>
       <div class="mean">
         <p><span class="lab">이름의 뜻</span>瀟는 물이 맑고 깊다는 뜻이고, 河는 강물입니다. 합치면 '맑고 깊은 강'입니다.</p>
-        <p><span class="lab">사주에 주는 도움</span>맑고 깊은 강은 마른 땅에 물(돈과 쉼)을 대 주고, 볕의 열(걱정과 몸의 열)을 식혀 줍니다(수극화). 불이 식으면 하나뿐인 쇠(일의 결과, 폐와 기관지)도 덜 눌립니다. 소리가 같은 낱말 소하(消夏)가 '더위를 가시게 함'이라는 뜻인 것도 한여름 생 사주와 잘 맞습니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>맑고 깊은 강이 마른 땅에 물(돈과 쉼)을 대 주고, 볕의 열(걱정과 몸의 열)을 식혀 줍니다(수극화). 소리가 같은 낱말 소하(消夏)가 '더위를 가시게 함'이라는 뜻인 것도 한여름 생 사주와 잘 맞습니다.</p>
       </div>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">지예</span><span class="gl">池霓</span></div>
+      <div class="badges"><span class="chip t1">1티어</span><span class="chip feel">산뜻하고 밝음</span><span class="chip s-soft">2,203명 · 여자 99.9%</span></div>
+      <p class="row2"><span class="k">한자</span><b class="hj">池霓</b>못 지 · 무지개 예 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
+      <p class="row2"><span class="k">소리</span>ㅈ(쇠) · ㅇ <span class="chip s-good">서로 돕는 순서</span><span class="cn">c를 붙여도 같음</span></p>
+      <div class="mean">
+        <p><span class="lab">이름의 뜻</span>池는 연못, 霓는 무지개입니다. 합치면 '연못에 뜬 무지개'입니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>무지개는 비가 그친 뒤 물기 머금은 하늘에 뜨므로, 물이 넉넉한 자리를 그린 이름입니다. 霓는 비 우(雨) 부수라 두 글자 모두 물 한자이고, 받침이 없어 불 소리도 없습니다.</p>
+      </div>
+      <p class="nt">세진 님의 지오(池吾)와 첫 한자 池가 같습니다.</p>
     </div>
   </div>
 
@@ -543,51 +564,59 @@ section{gap:16px;padding-block:30px;}
   <div class="opts">
     <div class="opt">
       <div class="hd"><span class="nm">소영</span><span class="gl">瀟瀛</span></div>
-      <div class="badges"><span class="chip t2">2티어</span><span class="chip s-soft">4,079명 · 여자 99.9%</span></div>
+      <div class="badges"><span class="chip t2">2티어</span><span class="chip feel">익숙하고 부드러움</span><span class="chip s-soft">4,079명 · 여자 99.9%</span></div>
       <p class="row2"><span class="k">한자</span><b class="hj">瀟瀛</b>맑을 소 · 바다 영 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
       <p class="row2"><span class="k">소리</span>ㅅ(쇠) · ㅇ <span class="chip s-good">서로 돕는 순서</span><span class="cn">받침 ㅇ 있음</span></p>
       <div class="mean">
         <p><span class="lab">이름의 뜻</span>瀛은 바다로, 신선이 산다는 섬 영주(瀛洲)의 그 글자입니다. 합치면 '맑고 깊은 바다'입니다.</p>
-        <p><span class="lab">사주에 주는 도움</span>바다처럼 넉넉한 물이라, 사주에 없는 돈과 여유를 크게 채우는 그림입니다. 넓은 물이 불(걱정과 열)도 식혀 줍니다.</p>
-        <p><span class="lab">2티어인 이유</span>받침 ㅇ을 운해본으로 보면 흙입니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>바다처럼 넉넉한 물이라, 사주에 없는 돈과 여유를 크게 채우는 그림입니다. 받침 ㅇ을 운해본으로 보면 흙이라 2티어입니다.</p>
       </div>
-      <p class="nt">본명 소연과 한 소리 차이라 부르기 자연스럽지만, 그만큼 흔한 편입니다. 찰 영(盈)은 부수 皿이 흙으로 분류되어 瀛을 골랐습니다.</p>
-    </div>
-    <div class="opt">
-      <div class="hd"><span class="nm">소쇄</span><span class="gl">瀟灑</span></div>
-      <div class="badges"><span class="chip t2">2티어</span><span class="chip s-soft">이름으로 쓰는 사람 없음</span></div>
-      <p class="row2"><span class="k">한자</span><b class="hj">瀟灑</b>맑을 소 · 뿌릴 쇄 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
-      <p class="row2"><span class="k">소리</span>ㅅ(쇠) · ㅆ(쇠) <span class="chip s-soft">같은 기운끼리</span></p>
-      <div class="mean">
-        <p><span class="lab">이름의 뜻</span>'기운이 맑고 깨끗하다'는 뜻의 낱말 소쇄(瀟灑)를 그대로 이름으로 썼습니다. 조선 정원 가운데 으뜸으로 꼽히는 담양 소쇄원(瀟灑園)의 그 이름입니다.</p>
-        <p><span class="lab">사주에 주는 도움</span>두 글자 모두 물 한자이고, 灑는 물을 뿌린다는 뜻이라 달아오른 땅에 물을 뿌려 열을 씻어 내는 그림입니다.</p>
-        <p><span class="lab">2티어인 이유</span>ㅅ과 ㅆ이 같은 쇠라서 소리끼리 서로 돕지는 않습니다.</p>
-      </div>
-      <p class="nt">품격은 가장 높지만 이름으로는 낯섭니다. 소리가 같은 낱말 소쇄(小瑣)는 '사소하다'는 뜻입니다.</p>
+      <p class="nt">본명 소연과 한 소리 차이라 부르기 자연스럽지만, 흔한 편입니다.</p>
     </div>
   </div>
 
-  <div class="grp"><h3><span class="chip t3">3티어</span> 받침에 불 하나</h3><p>모두 물 한자가 둘이고, 받침 ㄴ이 불 하나입니다. c 없이 씁니다.</p></div>
+  <div class="grp"><h3><span class="chip t3">3티어</span> 끝 받침에 불 하나</h3><p>모두 물 한자가 둘이고, 끝 받침 ㄴ이 불 하나입니다. c 없이 씁니다.</p></div>
   <div class="opts">
     <div class="opt">
       <div class="hd"><span class="nm">소빈</span><span class="gl">瀟濱</span></div>
-      <div class="badges"><span class="chip t3">3티어</span><span class="chip s-soft">706명 · 여자 96%</span></div>
+      <div class="badges"><span class="chip t3">3티어</span><span class="chip feel">산뜻한 요즘 느낌</span><span class="chip s-soft">706명 · 여자 96%</span></div>
       <p class="row2"><span class="k">한자</span><b class="hj">瀟濱</b>맑을 소 · 물가 빈 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
       <p class="row2"><span class="k">소리</span>ㅅ(쇠) · ㅂ <span class="chip s-good">서로 돕는 순서</span><span class="cn">받침 ㄴ 있음</span></p>
       <div class="mean">
         <p><span class="lab">이름의 뜻</span>濱은 물가입니다. 합치면 '맑은 물가'입니다.</p>
-        <p><span class="lab">사주에 주는 도움</span>맑은 물이 닿는 물가에 서 있는 그림이라, 늘 물(돈과 쉼) 가까이에 있는 이름으로 읽을 수 있습니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>맑은 물이 닿는 물가에 선 그림이라, 늘 물(돈과 쉼) 가까이에 있는 이름으로 읽을 수 있습니다.</p>
       </div>
       <p class="nt">ㅂ은 기준에 따라 흙이나 물로 보는데, 어느 쪽이든 ㅅ과 서로 돕는 짝입니다.</p>
     </div>
     <div class="opt">
+      <div class="hd"><span class="nm">자윤</span><span class="gl">滋潤</span></div>
+      <div class="badges"><span class="chip t3">3티어</span><span class="chip feel">부드럽고 넉넉함</span><span class="chip s-soft">423명 · 여자 74%</span></div>
+      <p class="row2"><span class="k">한자</span><b class="hj">滋潤</b>불을 자 · 윤택할 윤 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
+      <p class="row2"><span class="k">소리</span>ㅈ(쇠) · ㅇ <span class="chip s-good">서로 돕는 순서</span><span class="cn">받침 ㄴ 있음</span></p>
+      <div class="mean">
+        <p><span class="lab">이름의 뜻</span>滋는 불어나다, 潤은 윤택하다는 뜻입니다. 합치면 '넉넉히 불어나 윤기가 돎'입니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>두 글자 모두 물 한자입니다. 潤에는 이득이라는 뜻도 있어, 돈과 여유가 불어나는 이름으로 읽을 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">정연</span><span class="gl">淨淵</span></div>
+      <div class="badges"><span class="chip t3">3티어</span><span class="chip feel">단정하고 반듯함</span><span class="chip s-soft">4,358명 · 여자 78%</span></div>
+      <p class="row2"><span class="k">한자</span><b class="hj">淨淵</b>깨끗할 정 · 깊을 연 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
+      <p class="row2"><span class="k">소리</span>ㅈ(쇠) · ㅇ <span class="chip s-good">서로 돕는 순서</span><span class="cn">받침 ㅇ·ㄴ 있음</span></p>
+      <div class="mean">
+        <p><span class="lab">이름의 뜻</span>淨은 깨끗하다, 淵은 깊은 못입니다. 합치면 '깨끗하고 깊은 못'입니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>淵에는 '물건이 많이 모이는 곳'이라는 뜻도 있어, 맑은 물과 재물이 깊이 모이는 이름으로 읽을 수 있습니다.</p>
+      </div>
+      <p class="nt">그룹 트와이스에 같은 이름의 멤버가 있습니다.</p>
+    </div>
+    <div class="opt">
       <div class="hd"><span class="nm">소온</span><span class="gl">瀟溫</span></div>
-      <div class="badges"><span class="chip t3">3티어</span><span class="chip s-soft">62명 · 여자 84%</span></div>
+      <div class="badges"><span class="chip t3">3티어</span><span class="chip feel">부드럽고 따뜻함</span><span class="chip s-soft">62명 · 여자 84%</span></div>
       <p class="row2"><span class="k">한자</span><b class="hj">瀟溫</b>맑을 소 · 따뜻할 온 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
       <p class="row2"><span class="k">소리</span>ㅅ(쇠) · ㅇ <span class="chip s-good">서로 돕는 순서</span><span class="cn">받침 ㄴ 있음</span></p>
       <div class="mean">
         <p><span class="lab">이름의 뜻</span>溫은 따뜻하다는 뜻입니다. 합치면 '맑고 따뜻한 물'입니다.</p>
-        <p><span class="lab">사주에 주는 도움</span>溫은 뜻은 따뜻함이지만 삼수변이 붙은 물 한자라 물을 채웁니다. 차갑지 않은 부드러운 물이라, 몸과 마음을 편하게 하는 쉼의 뜻으로 읽을 수 있습니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>溫은 뜻은 따뜻함이지만 삼수변이 붙은 물 한자라 물을 채웁니다. 부드러운 물이라 몸과 마음을 쉬게 하는 뜻으로 읽을 수 있습니다.</p>
       </div>
       <p class="nt">이름으로 쓰는 사람이 아주 적습니다.</p>
     </div>
@@ -596,14 +625,34 @@ section{gap:16px;padding-block:30px;}
   <div class="grp"><h3><span class="chip t4">4티어</span> 약점이 큼</h3></div>
   <div class="opts">
     <div class="opt">
+      <div class="hd"><span class="nm">청아</span><span class="gl">淸我</span></div>
+      <div class="badges"><span class="chip t4">4티어</span><span class="chip feel">맑고 우아함</span><span class="chip s-soft">322명 · 여자 99%</span></div>
+      <p class="row2"><span class="k">한자</span><b class="hj">淸我</b>맑을 청 · 나 아 · 물 하나 <span class="dots e-water" aria-label="1개"><i></i></span> 쇠 하나 <span class="dots e-metal" aria-label="1개"><i></i></span></p>
+      <p class="row2"><span class="k">소리</span>ㅊ(쇠) · ㅇ <span class="chip s-good">서로 돕는 순서</span><span class="cn">받침 ㅇ 있음</span></p>
+      <div class="mean">
+        <p><span class="lab">이름의 뜻</span>淸은 맑다, 我는 '나'입니다. 합치면 '맑은 나'이고, 소리는 '속된 티가 없이 맑고 아름답다'는 뜻의 낱말 청아(淸雅)와 같습니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>淸이 물, 我가 쇠라서 물과 쇠를 하나씩 채웁니다. 물 한자가 하나뿐이라 4티어입니다. 낱말 청아의 雅(맑을 아)는 불로 분류되어 쓰지 않았습니다.</p>
+      </div>
+      <p class="nt">배우 이청아와 이름이 같습니다.</p>
+    </div>
+    <div class="opt">
+      <div class="hd"><span class="nm">윤주</span><span class="gl">潤洲</span></div>
+      <div class="badges"><span class="chip t4">4티어</span><span class="chip feel">차분하고 정갈함</span><span class="chip s-soft">3,091명 · 여자 98%</span></div>
+      <p class="row2"><span class="k">한자</span><b class="hj">潤洲</b>윤택할 윤 · 섬 주 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
+      <p class="row2"><span class="k">소리</span>ㅇ · ㅈ(쇠) <span class="chip s-good">서로 돕는 순서</span><span class="cn">가운데 받침 ㄴ 있음</span></p>
+      <div class="mean">
+        <p><span class="lab">이름의 뜻</span>潤은 윤택하다, 洲는 물가의 섬입니다. 합치면 '물이 넉넉한 섬'입니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>두 글자 모두 물 한자라 물을 둘 채웁니다. 다만 가운데 받침 ㄴ(불) 바로 뒤에 ㅈ(쇠)이 와서, 받침까지 보는 방식에서는 불이 쇠를 누르는 순서가 됩니다. 그래서 4티어입니다.</p>
+      </div>
+    </div>
+    <div class="opt">
       <div class="hd"><span class="nm">난희</span><span class="gl">瀾喜 · 말할 때 [나니]</span></div>
-      <div class="badges"><span class="chip t4">4티어</span><span class="chip s-plain">나니c와 같은 소리</span></div>
+      <div class="badges"><span class="chip t4">4티어</span><span class="chip feel">정겹고 익숙함</span><span class="chip s-plain">나니c와 같은 소리</span></div>
       <p class="row2"><span class="k">한자</span><b class="hj">瀾喜</b>물결 란 · 기쁠 희 · 물 둘 <span class="dots e-water" aria-label="2개"><i></i><i></i></span></p>
       <p class="row2"><span class="k">소리</span>ㄴ(불) · ㅎ <span class="chip s-shift">기준에 따라 다름</span></p>
       <div class="mean">
         <p><span class="lab">이름의 뜻</span>瀾은 큰 물결, 喜는 기쁨입니다. 합치면 '물결처럼 넘실대는 기쁨'입니다.</p>
-        <p><span class="lab">사주에 주는 도움</span>물 한자 둘로 모자란 물을 채우고, 넉넉한 물에 기쁨을 더하는 뜻이라 행복을 바라는 이름으로 잘 어울립니다.</p>
-        <p><span class="lab">4티어인 이유</span>첫소리 ㄴ과 받침 ㄴ이 모두 불입니다. 해례본 기준으로는 ㄴ(불)과 ㅎ(물)이 서로 누르고, 喜는 사주플러스가 이름에 쓰지 않는 글자로 표시합니다. 喜 대신 囍(쌍희 희)를 쓰면 이 표시는 없어집니다.</p>
+        <p><span class="lab">사주에 주는 도움</span>물 한자 둘로 모자란 물을 채우고, 넉넉한 물에 기쁨을 더하는 뜻이라 행복을 바라는 이름으로 잘 어울립니다. 다만 첫소리 ㄴ과 받침 ㄴ이 모두 불이고, 喜는 사주플러스가 이름에 쓰지 않는 글자로 표시합니다(囍로 바꾸면 이 표시는 없어집니다).</p>
       </div>
       <p class="nt">지금 쓰시는 나니c와 같은 소리로 부를 수 있습니다(표준 발음은 [난히]).</p>
     </div>
@@ -614,7 +663,7 @@ section{gap:16px;padding-block:30px;}
   <p>점은 한자의 오행입니다. 소리는 기운을 더하는 것으로 세지 않고, 글자끼리 서로 돕는 순서인지만 표시했습니다.</p>
   <p>한자 오행은 네임차트와 사주플러스 두 곳의 값이 같은 글자만 썼고, 사주플러스에서 글자와 부수의 오행이 다르거나 이름에 쓰지 않는 글자로 표시된 한자는 피했습니다. 사람 수와 남녀 비율은 네임차트, 미국 순위는 Behind the Name에 실린 2025년 통계입니다.</p>
   <p>c를 [씨]로 읽어 쇠 소리로 본 것은 제 해석입니다. 성명학은 과학적으로 검증된 방법이 아닙니다.</p>
-  <p>출처: <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>, 『훈민정음』 해례본 제자해(위키문헌), 김민경·조기룡(2026) 「한글작명법의 문제점과 과제 고찰」, 김만태(2026) 「국보 제70호 『훈민정음(해례)』의 성명학 적용에 관한 연구」, 인터넷 한국작명연구원 성명학 자료(소리오행의 적용), 데일리안 칼럼(2010) 「자원오행-발음오행-수리오행을 아시나요?」, 네임차트(namechart.kr), 사주플러스 한자사전(hanja.sajuplus.net), 리디(ridibooks.com), 표준국어대사전(소하, 소쇄하다), 한국어 위키백과(소쇄원), 위키낱말사전(瀟, 瀾, 囍, 吾, Gio), Behind the Name(Ethan). 2026년 11월 11일 확인.</p>
+  <p>출처: <a href="https://leftjap.github.io/sn-note-046e43/">세진·소연 사주 노트</a>, 『훈민정음』 해례본 제자해(위키문헌), 김민경·조기룡(2026) 「한글작명법의 문제점과 과제 고찰」, 김만태(2026) 「국보 제70호 『훈민정음(해례)』의 성명학 적용에 관한 연구」, 인터넷 한국작명연구원 성명학 자료(소리오행의 적용), 데일리안 칼럼(2010) 「자원오행-발음오행-수리오행을 아시나요?」, 네임차트(namechart.kr), 사주플러스 한자사전(hanja.sajuplus.net), 리디(ridibooks.com), 표준국어대사전(소하, 청아하다), 위키낱말사전(瀟, 瀾, 囍, 吾, Gio), Behind the Name(Ethan). 2026년 11월 11일 확인.</p>
 </footer>
 
 </div>
